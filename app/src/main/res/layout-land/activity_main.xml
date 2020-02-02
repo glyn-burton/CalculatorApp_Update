@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/etCalculatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TableLayout
+        android:id="@+id/etNumGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCalculatorView"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <Button
+                android:id="@+id/et1NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/et2NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="24sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/et3NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etAddNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etPerNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/et4NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/et5NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="24sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/et6NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etMinNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etPowNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="^"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/et7NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/et8NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="24sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/et9NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etMulNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etENumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="e"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/etDotNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/et0NumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="NumberInput"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/etEqNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="SolutionOutput"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etDivNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+            <Button
+
+                android:id="@+id/etPiNumBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnColor"
+                android:onClick="OperatorInput"
+                android:text="π"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+
+                >
+
+            </Button>
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/etClearBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btnColor"
+            android:onClick="ClearInput"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+
+            />
+
+        <TextView
+            android:id="@+id/etResultsScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/etNumGrid" />
+
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

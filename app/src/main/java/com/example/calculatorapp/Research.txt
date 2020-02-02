@@ -1,0 +1,39 @@
+﻿Define the following terms: View, ViewGroup, View Hierarchy.
+
+
+The View is the superclass for all UI objects. Anything being displayed on the screen is a view.
+
+
+ViewGroups are subclasses of View that act as containers for views. Common ones include:
+LinearLayout, GridLayout, and RelativeLayout.
+
+
+View Hierarchy is the order in which views are rendered. This includes nested views.
+
+
+2. Explain in detail how the following layouts render, what unique items each has that must be implemented: Constraint, Linear, Coordinator, Grid and Relative?
+Constraint: The children of these views have their positions declared relative to their siblings and parent.
+Linear: The views are rendered out one after the other, its a flat hierarchy. 
+Coordinator views determine not only position but also assigns them behaviors and determines interactions between the children as well. Its one of the more powerful layouts.
+Grid: Renders views in a grid pattern determined by x columns and y rows. 
+Relative: A flat hierarchy that readers views based on sibling and parent positions. 
+
+
+3.  What are Listeners?
+Listeners are interfaces that are triggered by user input. They have a callback method, allow you to do something based on the using interacting with it.
+
+
+4. How does Java garbage collection work?
+Java garbage collection is automatic, and cleans up unused items. It finds objects with no references and deletes them. 
+
+
+5. Explain the software development lifecycle
+The SDLC is a method for producing the best software for the lowest costs and in the shortest time.
+Identify ---> Plan ---> Design ---> Build  ---> Test ---> Deploy ---> Maintain 
+Identify: Find the current problems that the software is meant to fix. 
+Plan: Talk with teams and stakeholders to determine budget, time frame, and other specifics.
+Design: Begin designing software specifications, and turn it into an implementable design plan.
+Build: Using developers, create the app. This is where an android developer does most of their work.
+Test: Q/A portion, testing and iterating on results.
+Deploy: Make the app public, and begin using it or distributing it to users.
+Maintain: Continue small QOL fixes and updates in order to move the ap closer to the desired state.
